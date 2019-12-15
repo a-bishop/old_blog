@@ -1,0 +1,329 @@
+---
+---
+
+//
+// IMPORTS
+//
+
+@import "reset";
+@import "variables";
+// Syntax highlighting @import is at the bottom of this file
+
+/**************/
+/* BASE RULES */
+/**************/
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background: $white;
+  font: 19px/1.4 $helvetica;
+  color: $darkGray;
+}
+
+body p {
+  line-height: 1.8rem;
+  color: #333;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $helveticaNeue;
+  color: $darkerGray;
+  font-weight: bold;
+
+  line-height: 1.7;
+  margin: 1em 0 15px;
+  padding: 0;
+
+  @include mobile {
+    line-height: 1.4;
+  }
+}
+
+h1 {
+  font-size: 28px;
+  a {
+    color: inherit;
+  }
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+  color: $gray;
+}
+
+p {
+  margin: 15px 0;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    color: $blue;
+  }
+}
+
+ul,
+ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol ul,
+ul ol,
+ul ul,
+ol ol {
+  margin: 0;
+}
+
+ul ul,
+ol ul {
+  list-style-type: circle;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+// Fixes images in popup boxes from Google Translate
+.gmnoprint img {
+  max-width: none;
+}
+
+.date {
+  font-style: italic;
+  color: $gray;
+}
+
+// Specify the color of the selection
+::-moz-selection {
+  color: $black;
+  background: $darkerGray;
+}
+::selection {
+  color: $black;
+  background: $darkerGray;
+}
+
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
+
+//
+// .masthead
+//
+
+.wrapper-masthead {
+  margin-bottom: 50px;
+}
+
+.masthead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 0 20px 0;
+  border-bottom: 1px solid $darkerGray;
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.site-avatar {
+  width: 90px;
+  height: 90px;
+  margin-top: 20px;
+  @include mobile {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.site-info {
+  margin-top: 20px;
+  margin-left: -20px;
+  @include mobile {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.site-name {
+  margin: 0;
+  color: $darkGray;
+  cursor: pointer;
+  font-family: $helveticaNeue;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.site-description {
+  margin: -5px 0 0 0;
+  color: $gray;
+  font-size: 16px;
+
+  @include mobile {
+    margin: 3px 0;
+  }
+}
+
+nav {
+  display: grid;
+  grid-row-gap: 10px;
+  text-align: center;
+  margin-top: 50px; // TODO: reduce this margin to make room for search bar
+  font-family: $helveticaNeue;
+  font-size: 18px;
+
+  @include mobile {
+    margin: 5px auto 0 auto;
+    font-size: 16px;
+  }
+
+  a {
+    margin-left: 20px;
+    color: $darkGray;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    @include mobile {
+      margin: 0 10px;
+      color: $blue;
+    }
+  }
+}
+
+#search-input {
+  align-self: flex-end;
+}
+
+//
+// .main
+//
+
+.posts > .post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $lightGray;
+}
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.post {
+  blockquote {
+    margin: 1.8em 0.8em;
+    border-left: 2px solid $gray;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
+
+.arrowList li {
+  list-style-type: none;
+}
+
+.arrowList li::before {
+  content: "\25BA \0020";
+  font-size: 13px;
+  margin-left: -18px;
+}
+
+.wrapper-footer {
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #d3d3d3;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.fab,
+.far,
+.fas {
+  color: black;
+  font-size: 1.7em;
+  &:hover {
+    color: $blue;
+  }
+}
+.gitHubLink {
+  font-size: 1.1em;
+  color: #444444;
+}
+.blueLinkImage {
+  color: $blue;
+  font-size: 0.9em;
+}
+
+.checkmarkList li {
+  list-style-type: none;
+}
+
+.checkmarkList li::before {
+  content: "\2713\0020";
+  margin-left: -18px;
+}
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "highlights";
+@import "svg-icons";
