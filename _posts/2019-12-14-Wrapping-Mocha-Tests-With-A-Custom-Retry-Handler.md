@@ -6,7 +6,7 @@ tags: mocha chai sinon javascript testing
 
 When writing integration tests for interactions with external services, it can be difficult to predict the amount of time that these processes will take.  As a result, it is tempting to add large timeouts to ensure that the side effects of each network call have completed before moving on to the next step of the test.
 
-For instance, you might want to ensure that a request you send to an endpoint that responds via webhook has triggered an update in your database, but you may not know exactly how long it will take for the service to process the request and return the webhook. The naive solution would be to add a lengthy `setTimeout` function after the external call to ensure the webhook has been returned.
+For instance, you might want to ensure that a request you send to an endpoint that responds via webhook has triggered an update in your database, but you may not know exactly how long it will take for the service to process the request and return the webhook. The naive solution would be to add a lengthy `setTimeout` function after the external call to ensure the webhook has been sent.
 
 ## Retry handlers
 
