@@ -10,7 +10,7 @@ For instance, you might want to ensure that a request you send to an endpoint th
 
 ## Retry handlers
 
-An interesting pattern that can help in avoiding the use of these heavy-handed timeouts is to wrap the test in a function that takes in the number of attempts desired, and returns a test handler with a weighted timeout function that when called will add steadily increasing timeouts based on the attempt count (and a multiplication factor which can be configured).
+An interesting pattern that can help in avoiding the use of these heavy-handed timeouts is to wrap the test in a function that takes in the number of attempts desired, and returns a test handler with a weighted timeout function that when called will calculate an adjusted timeout based on the attempt count and a multiplication factor (which can be configured).
 
 This timeout function will know the attempt count on each test run because it has been bound via closure in the handler.
 
