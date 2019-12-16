@@ -82,4 +82,4 @@ describe('My Integration', function() {
 }
 ```
 
-The nice thing about this pattern is that we can start by writing tests with many retries and low timeouts, and analyze the runs to see at what timeout threshold the tests become stable.
+The nice thing about this pattern is that we can start by writing tests with many retries and low timeouts, and analyze the runs to determine at what timeout threshold the tests become stable.
