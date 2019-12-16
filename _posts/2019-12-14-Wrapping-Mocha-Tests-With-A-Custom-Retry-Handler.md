@@ -8,9 +8,11 @@ When writing integration tests for interactions with external services, it can b
 
 For instance, you might want to ensure that a request you send to an endpoint that responds via webhook has then caused a value in your database to be updated, but you may not know exactly how long it will take for that service to process the request and return the webhook. 
 
-An interesting pattern that can help in avoiding the use of heavy-handed timeouts is to wrap the test in a function that takes in the number of attempts desired, and returns a test handler with a weighted timeout function that when called will add steadily increasing timeouts based on the attempt count and a multiplication factor. 
+## Retry handlers
 
-This function knows the attempt count because it has been bound via closure in the handler.
+An interesting pattern that can help in avoiding the use of heavy-handed timeouts is to wrap the test in a function that takes in the number of attempts desired, and returns a test handler with a weighted timeout function that when called will add steadily increasing timeouts based on the attempt count (and a multiplication factor which can be configured).
+
+This timeout function will know the attempt count on each test run because it has been bound via closure in the handler.
 
 ```js
 // test_utils.js
@@ -33,10 +35,11 @@ function withAttempts(attempts, testFunc) {
     }
 
     try {
-      // return the test
+      // run the test and pass in an object with the timeout function and the attempt count
       return await testFunc({ weightedSleep, attemptCount });
     } catch (e) {
       debug(`error: ${e}`);
+      // throwing the caught error will retry the test
       throw e;
     }
   };
