@@ -63,7 +63,7 @@ And here's how the wrapper would be used in the context of a test:
 
 describe('My Integration', function() {
     context('when I make a network request with side effects', () => {
-        it('eventually records the correct value in my database', withAttempts(3, async ({ weightedSleep }) => {
+        it('the correct value is eventually recorded in my database', withAttempts(3, async ({ weightedSleep }) => {
                 // make a time-consuming network call with side effects
                 await fetchSomethingTimeConsuming();
                 // set a timeout of 10 seconds on initial run, with steadily
