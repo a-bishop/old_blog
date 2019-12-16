@@ -1,0 +1,82 @@
+---
+layout: post
+title: Wrapping Mocha Tests With A Custom Retry Handler
+tags: mocha chai sinon javascript testing
+---
+
+When writing integration tests for interactions with external services, it can be difficult to predict the amount of time that these processes will take.  As a result, it is tempting to add large timeouts to ensure that the side effects of each network call have completed before moving on to the next step of the test.
+
+For instance, you might want to ensure that a request you send to an endpoint that responds via webhook has then caused a value in your database to be updated, but you may not know exactly how long it will take for that service to process the request and return the webhook. 
+
+An interesting pattern that can help in avoiding the use of heavy-handed timeouts is to wrap the test in a function that takes in the number of attempts desired, and returns a test handler with a weighted timeout function that when called will add steadily increasing timeouts based on the attempt count and a multiplication factor. 
+
+This function knows the attempt count because it has been bound via closure in the handler.
+
+```js
+// test_utils.js
+
+
+// the test wrapper
+function withAttempts(attempts, testFunc) {
+  return async function() {
+    // grab the retry count from mocha's test instance
+    const retryCount = this.runnable().currentRetry();
+    const attemptCount = retryCount + 1;
+
+    // if it's the first run of the test, set the number of desired retries.
+    if (!retryCount) this.retries(attempts - 1);
+    else debug(`retry: ${this.test.title}`);
+    
+    // define a weightedSleep function, with the attemptCount bound via closure
+    function weightedSleep(milliseconds, options) {
+      return sleep(getWeightedValue(milliseconds, { attemptCount, ...options }));
+    }
+
+    try {
+      // return the test
+      return await testFunc({ weightedSleep, attemptCount });
+    } catch (e) {
+      debug(`error: ${e}`);
+      throw e;
+    }
+  };
+}
+
+function sleep(milliseconds) {
+  return new Promise(resolve => setTimeout(resolve, milliseconds));
+}
+
+// increase a value by the given factor based on the attempt count.
+// For example, if the initial value is 1000, with a default increment
+// factor of 0.5 (50%), if the attempt count is 1 the return value will be 1000,
+// if the attempt count is 2 the return value will be 1500, and if the attempt
+// count is 3 the return value will be 2000.
+function getWeightedValue(value, { attemptCount = 1, incrementFactor = 0.5 }) {
+  return attemptCount > 1 ? value + value * attemptCount * incrementFactor : value;
+}
+```
+
+And here's how the wrapper would be used in the context of a test:
+
+```js
+// my_integration.test.js
+
+describe('My Integration', function() {
+    context('when I make a network request with side effects', () => {
+        it('eventually records the correct value in my database', withAttempts(3, async ({ weightedSleep }) => {
+                // make a time-consuming network call with side effects
+                await fetchSomethingTimeConsuming();
+                // set a timeout of 10 seconds on initial run, with steadily
+                // increasing timeouts on subsequent runs
+                await weightedSleep(10000);
+                // assert on the value of something that happened as a side effect 
+                // of the network call. If this assertion fails 
+                // the test will retry with a new weightedSleep function
+                expect(await getValueInDatabase()).to.equal({foo: 'bar'})
+            })
+        )
+    });
+}
+```
+
+The nice thing about this pattern is that we can start by writing tests with many retries and low timeouts, and analyze the runs to see at what timeout threshold the tests become stable.
