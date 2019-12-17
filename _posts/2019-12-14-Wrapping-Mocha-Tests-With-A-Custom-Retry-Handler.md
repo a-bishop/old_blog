@@ -19,14 +19,14 @@ This timeout function will know the attempt count on each test run because it ha
 
 
 // the test wrapper
-function withAttempts(attempts, testFunc) {
+function withAttempts(totalAttempts, testFunc) {
   return async function() {
     // grab the retry count from mocha's test instance
     const retryCount = this.runnable().currentRetry();
     const attemptCount = retryCount + 1;
 
     // if it's the first run of the test, set the number of desired retries.
-    if (!retryCount) this.retries(attempts - 1);
+    if (!retryCount) this.retries(totalAttempts - 1);
     else debug(`retry: ${this.test.title}`);
     
     // define a weightedSleep function, with the attemptCount bound via closure
