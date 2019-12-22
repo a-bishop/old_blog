@@ -4,15 +4,15 @@ title: Wrapping Mocha Tests With A Custom Retry Handler
 tags: mocha chai sinon javascript testing
 ---
 
-When writing integration tests for interactions with external services, it can be difficult to predict the amount of time that these processes will take.  As a result, it is tempting to add large timeouts to ensure that the side effects of each network call have completed before moving on to the next step of the test.
+When writing integration tests for interactions with external services, it can be difficult to predict the amount of time that these processes will take. As a result, it is tempting to add large timeouts to ensure that the side effects of each network call have completed before moving on to the next step of the test.
 
 For instance, you might want to ensure that a request you send to an endpoint that responds via webhook has triggered an update in your database, but you may not know exactly how long it will take for the service to process the request and return the webhook. The naive solution would be to add a lengthy `setTimeout` function after the external call to ensure the webhook has been sent.
 
 ## Retry handlers
 
-An interesting pattern that can help in avoiding the use of these heavy-handed timeouts is to wrap the test in a function that takes in the number of attempts desired, and returns a test handler with a weighted timeout function that when called will calculate an adjusted timeout based on the attempt count and a multiplication factor (which can be configured).
+While writing integration tests for the payments platform at Change.org, I helped develop a method that would allow us to avoid the use of these heavy-handed timeouts. Because there was no predictable way to know the amount of time it would take for Stripe webhooks to respond, we wanted to be able to retry the test if it failed, but with steadily increasing timeouts. 
 
-This timeout function will know the attempt count on each test run because it has been bound via closure in the handler.
+The technique involved wrapping the test in a function that takes in the number of attempts desired, and returns a test handler with a weighted timeout function that when called will calculate an adjusted timeout based on the attempt count and a multiplication factor (which can be configured). This timeout function will know the attempt count on each test run because it has been bound via closure in the handler.
 
 ```js
 // test_utils.js
@@ -21,6 +21,7 @@ This timeout function will know the attempt count on each test run because it ha
 // the test wrapper
 function withAttempts(totalAttempts, testFunc) {
   return async function() {
+    
     // grab the retry count from mocha's test instance
     const retryCount = this.runnable().currentRetry();
     const attemptCount = retryCount + 1;
