@@ -10,9 +10,9 @@ For instance, you might want to ensure that a request you send to an endpoint th
 
 ## Retry handlers
 
-While writing integration tests for the payments platform at Change.org, I helped develop a method that would allow us to avoid the use of these heavy-handed timeouts. Because there was no predictable way to know the amount of time it would take for Stripe webhooks to respond, we wanted to be able to retry the test if it failed, but with steadily increasing timeouts. 
+While writing integration tests for the payments platform at Change.org, I helped develop a method that would allow us to avoid the use of these heavy-handed timeouts. We wanted to be able to retry the test if it failed, using increasing timeouts calculated on each run.
 
-The technique involved wrapping the test in a function that takes in the number of attempts desired, and returns a test handler with a weighted timeout function that when called will calculate an adjusted timeout based on the attempt count and a multiplication factor (which can be configured). This timeout function will know the attempt count on each test run because it has been bound via closure in the handler.
+The technique involved wrapping the test in a function that takes in the number of attempts desired, and returns a test handler with a weighted timeout function that when called calculates an adjusted timeout based on the attempt count and a multiplication factor (which can be configured). This timeout function will know the attempt count on each test run because it has been bound via closure in the handler.
 
 ```js
 // test_utils.js
