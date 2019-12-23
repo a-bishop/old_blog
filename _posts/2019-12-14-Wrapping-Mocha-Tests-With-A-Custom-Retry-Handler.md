@@ -70,9 +70,9 @@ describe('My Integration', function() {
         it('the correct value is eventually recorded in my database', withAttempts(3, async ({ weightedSleep }) => {
                 // make a time-consuming network call with side effects
                 await fetchSomethingTimeConsuming();
-                // set a timeout of 10 seconds on initial run, with steadily
+                // set a timeout of 5 seconds on initial run, with steadily
                 // increasing timeouts on subsequent runs
-                await weightedSleep(10000);
+                await weightedSleep(5000);
                 // assert on the value of something that happened as a side effect 
                 // of the network call. If this assertion fails 
                 // the test will retry with a new weightedSleep function
