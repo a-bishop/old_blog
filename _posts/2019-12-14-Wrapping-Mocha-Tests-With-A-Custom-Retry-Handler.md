@@ -10,18 +10,16 @@ For instance, you might want to ensure that a request you send to an endpoint th
 
 ## Retry handlers
 
-While writing integration tests for the payments platform at Change.org, I helped develop a method that would allow us to avoid the use of these heavy-handed timeouts. We wanted to be able to retry the test if it failed, using increasing timeouts calculated on each run.
+While writing integration tests in Mocha for the payment platform at Change.org, I helped develop a method that would allow us to avoid the use of these heavy-handed timeouts. We wanted to be able to retry the test if it failed, using increasing timeouts calculated on each run.
 
-The technique involved wrapping the test in a function that takes in the number of attempts desired, and returns a test handler with a weighted timeout function that when called calculates an adjusted timeout based on the attempt count and a multiplication factor (which can be configured). This timeout function will know the attempt count on each test run because it has been bound via closure in the handler.
+The technique involved wrapping the test in a function that takes in the number of attempts desired, and returns a test handler with a weighted timeout function that when called calculates an adjusted timeout based on the attempt count and a multiplication factor (which can be configured). This timeout function knows the attempt count on each test run because it has been bound via closure in the handler.
 
 ```js
 // test_utils.js
 
-
 // the test wrapper
 function withAttempts(totalAttempts, testFunc) {
   return async function() {
-    
     // grab the retry count from mocha's test instance
     const retryCount = this.runnable().currentRetry();
     const attemptCount = retryCount + 1;
@@ -29,10 +27,12 @@ function withAttempts(totalAttempts, testFunc) {
     // if it's the first run of the test, set the number of desired retries.
     if (!retryCount) this.retries(totalAttempts - 1);
     else debug(`retry: ${this.test.title}`);
-    
+
     // define a weightedSleep function, with the attemptCount bound via closure
     function weightedSleep(milliseconds, options) {
-      return sleep(getWeightedValue(milliseconds, { attemptCount, ...options }));
+      return sleep(
+        getWeightedValue(milliseconds, { attemptCount, ...options })
+      );
     }
 
     try {
@@ -56,7 +56,9 @@ function sleep(milliseconds) {
 // if the attempt count is 2 the return value will be 1500, and if the attempt
 // count is 3 the return value will be 2000.
 function getWeightedValue(value, { attemptCount = 1, incrementFactor = 0.5 }) {
-  return attemptCount > 1 ? value + value * attemptCount * incrementFactor : value;
+  return attemptCount > 1
+    ? value + value * attemptCount * incrementFactor
+    : value;
 }
 ```
 
@@ -73,8 +75,8 @@ describe('My Integration', function() {
                 // set a timeout of 5 seconds on initial run, with steadily
                 // increasing timeouts on subsequent runs
                 await weightedSleep(5000);
-                // assert on the value of something that happened as a side effect 
-                // of the network call. If this assertion fails 
+                // assert on the value of something that happened as a side effect
+                // of the network call. If this assertion fails
                 // the test will retry with a new weightedSleep function
                 expect(await getValueInDatabase()).to.equal({foo: 'bar'})
             })
