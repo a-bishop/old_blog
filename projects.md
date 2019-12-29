@@ -161,7 +161,7 @@ permalink: /projects/
             </div>
             <div class="toolBoxItem">
               <p class="titleBold">Back End / APIs</p>
-              <p>Node, Express, MongoDB, MySQL, Firebase, Stripe, Braintree</p>
+              <p>Node, Express, Feathers, MongoDB, MySQL, Firebase, Stripe, Braintree</p>
             </div>
             <div class="separator">
             </div>
@@ -172,9 +172,13 @@ permalink: /projects/
         </section>
         <p class="mainSectionTitle">RECENT PROJECTS</p>
         <section>
+            <a href="https://sandbox.abishop.me" class="projectLink">Outdraw</a>
+            <p class="italic">Tech: Feathers.js, HTML5 Canvas &nbsp;<a href="https://github.com/a-bishop/feathers-draw"><i class="fab fa-github-square gitHubLink"></i></a></p>
+            <p>A real-time collaborative drawing app, using HTML5 Canvas, Feathers.js and neDB, a file-based data store modeled on MongoDB.</p>
+            <br>
             <a href="https://andrewnbishop.com/drum-machine" class="projectLink">Tone.js Drum Machine</a>
-            <p class="italic">Tech: Tone.js, lit-element, web components &nbsp;<a href="https://github.com/a-bishop/drum-machine"><i class="fab fa-github-square gitHubLink"></i></a></p>
-            <p>A drum machine and arpeggiator built with the Tone.js library and lit-element, a base class for creating lightweight web components. Learned techniques for working with the Web Audio API. Demo works best in the Chrome browser.</p>
+            <p class="italic">Tech: Tone.js, Web Components &nbsp;<a href="https://github.com/a-bishop/drum-machine"><i class="fab fa-github-square gitHubLink"></i></a></p>
+            <p>A drum machine and arpeggiator built with the Tone.js library and lit-element, a base class for creating lightweight Web Components. Demo works best in the Chrome browser.</p>
             <br>
             <a href="https://movie-recommendations.netlify.com" class="projectLink">Movie Recommendations</a>
             <p class="italic">Tech: React, Firebase, Styled Components &nbsp;<a href="https://github.com/a-bishop/movies-to-watch"><i class="fab fa-github-square gitHubLink"></i></a></p>
