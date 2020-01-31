@@ -4,8 +4,7 @@ title: About
 permalink: /about/
 ---
 
-
-I'm a recent graduate of the Information and Computer Systems program at Camosun College in Victoria, BC, and I'm currently completing a 6-month Software Engineering internship at [Change.org](https://change.org). I'm passionate about working with modern web technologies to craft great user experiences.
+I'm a graduate of the Information and Computer Systems program at Camosun College in Victoria, BC, and I recently completed a 6-month Software Engineering internship at [Change.org](https://change.org) where I worked as a backend developer on the payments team. I'm passionate about working with modern web technologies to craft great user experiences.
 
 My intent with this site is to feature my personal and professional software development projects and to give me a place to reflect on what I've been learning. Check out the [projects page]( {{ "./projects" | relative_url }} ) to see some demos of my latest side projects. My GitHub account with all the source code can be found [here](https://github.com/a-bishop).
 
