@@ -155,7 +155,7 @@ permalink: /projects/
         <section class="toolBox">
             <div class="toolBoxItem">
               <p class="titleBold">Front End / Testing</p>
-              <p>React, React Native, Gatsby, Jekyll, Web Components, Mocha, Chai, Sinon, TestCafé</p>
+              <p>React, React Native, Gatsby, Jekyll, Web Components, Mocha, Chai, Sinon, TestCafe</p>
             </div>
             <div class="separator">
             </div>
