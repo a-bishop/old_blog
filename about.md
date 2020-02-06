@@ -13,7 +13,7 @@ My intent with this site is to feature my personal and professional software dev
 
 ## Contact
 
-Have questions about my portfolio or want to discuss how I can help you build out your software project or company? Please don't hesitate to get in touch!
+Have questions about my portfolio or current work availability? Please don't hesitate to get in touch.
 
 <form action="https://getform.io/f/ab7dccdb-e06b-49f5-8433-2d2bc2eaa19c" method="POST" id="usrform">
     <div class="form-row">
