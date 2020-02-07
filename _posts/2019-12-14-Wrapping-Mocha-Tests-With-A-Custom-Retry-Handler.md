@@ -50,7 +50,7 @@ function sleep(milliseconds) {
   return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
 
-// increase a value by the given factor based on the attempt count.
+// Increase a value by the given factor based on the attempt count.
 // For example, if the initial value is 1000, with a default increment
 // factor of 0.5 (50%), if the attempt count is 1 the return value will be 1000,
 // if the attempt count is 2 the return value will be 1500, and if the attempt

@@ -188,6 +188,10 @@ permalink: /projects/
             <p class="italic">Tech: Swift, XCode, ListenNotes API &nbsp;<a href="https://github.com/a-bishop/podBlast"><i class="fab fa-github-square gitHubLink"></i></a></p>
             <p>An iOS podcast search and recommendation app, consuming the ListenNotes API and featuring infinite scroll. Search by topic, podcast name, or by genre, and save favourite podcasts for later.</p>
             <br>
+            <a href="https://js-messageboard.herokuapp.com/" class="projectLink" >JS Messageboard</a>
+            <p class="italic">Tech: Node, React, MongoDB, Webpack, Bootstrap &nbsp;<a href="https://github.com/a-bishop/js-msgboard"><i class="fab fa-github-square gitHubLink"></i></a></p>
+            <p>Proof-of-concept universal JavaScript messageboard application with a fully responsive front-end and custom authentication and authorization scheme. Built for Camosun program's second-year final web services project.</p>
+            <br>
             <a href="https://andrewnbishop.com/population-stats" class="projectLink">Population Stats</a>
             <p class="italic">Tech: React, D3 &nbsp;<a href="https://github.com/a-bishop/population-stats"><i class="fab fa-github-square gitHubLink"></i></a></p>
             <p>A React single page application that allows users to compare up to six country populations in a bar graph. Uses the D3 library.</p>
@@ -196,6 +200,10 @@ permalink: /projects/
             <p class="italic">Tech: JavaScript, Node, Express, lodash &nbsp;<a href="https://github.com/a-bishop/battlesnake-samuel"><i class="fab fa-github-square gitHubLink"></i></a></p>
             <p>A snake AI written in Node to compete in the intermediate category at Battlesnake, a programming competition.</p>
             <br>
+            <a href="https://github.com/a-bishop/micks-licks" class="projectLink" >Mick's Licks</a>
+            <p class="italic">Tech: JavaScript, HTML, CSS, PHP, MySQL, Bootstrap, GitLab &nbsp;<a href="https://github.com/a-bishop/micks-licks"><i class="fab fa-github-square gitHubLink"></i></a></p>
+            <p>An e-commerce web application built with the LAMP stack to sell used vinyl records, with login verification, a cart system and online payment integration. Created with a team of three other developers.</p>
+            <br>
             <a href="https://projects.abishop.me/blog" class="projectLink" >Capstone Project Site</a>
             <p class="italic">Tech: Wordpress, MySQL, Digital Ocean</p>
             <p>Installed and customized a Wordpress blog within a server block on a Digital Ocean droplet to function as our React Native Mobile Kiosk Capstone project website. Wrote all blog entries.</p>
@@ -203,10 +211,6 @@ permalink: /projects/
             <a href="https://github.com/a-bishop/camlink-scraper" class="projectLink" >Timetable Scraper</a>&nbsp;and&nbsp;<a href="https://andrewnbishop.com/react-view-timetable/" class="projectLink" >Timetable Viewer</a>
             <p class="italic">Tech: Python, Selenium, Beautiful Soup, React, CSS Grid &nbsp;<a href="https://github.com/a-bishop/camlink-scraper"><i class="fab fa-github-square gitHubLink"></i></a></p>
             <p>A Python script to scrape student's course registration data and a React SPA to view the courses as a weekly schedule.</p>
-            <br>
-            <a href="https://github.com/a-bishop/micks-licks" class="projectLink" >Mick's Licks</a>
-            <p class="italic">Tech: JavaScript, HTML, CSS, PHP, MySQL, Bootstrap, GitLab &nbsp;<a href="https://github.com/a-bishop/micks-licks"><i class="fab fa-github-square gitHubLink"></i></a></p>
-            <p>An e-commerce web application built with the LAMP stack to sell used vinyl records, with login verification, a cart system and online payment integration. Created with a team of three other developers.</p>
             <br>
             <a href="https://andrewnbishop.com" class="projectLink" >This Site</a>
             <p class="italic">Tech: GitHub Pages, Jekyll, Liquid, Markdown, HTML, CSS &nbsp;<a href="https://github.com/a-bishop/a-bishop.github.io"><i class="fab fa-github-square gitHubLink"></i></a></p>
