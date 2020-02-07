@@ -172,14 +172,6 @@ permalink: /projects/
         </section>
         <p class="mainSectionTitle">RECENT PROJECTS</p>
         <section>
-            <a href="https://sandbox.abishop.me" class="projectLink">Outdraw</a>
-            <p class="italic">Tech: Feathers.js, HTML5 Canvas &nbsp;<a href="https://github.com/a-bishop/feathers-draw"><i class="fab fa-github-square gitHubLink"></i></a></p>
-            <p>A real-time collaborative drawing app, using HTML5 Canvas, Feathers.js and neDB, a file-based data store modeled on MongoDB.</p>
-            <br>
-            <a href="https://andrewnbishop.com/drum-machine" class="projectLink">Tone.js Drum Machine</a>
-            <p class="italic">Tech: Tone.js, Web Components &nbsp;<a href="https://github.com/a-bishop/drum-machine"><i class="fab fa-github-square gitHubLink"></i></a></p>
-            <p>A drum machine and arpeggiator built with the Tone.js library and lit-element, a base class for creating lightweight Web Components. Demo works best in the Chrome browser.</p>
-            <br>
             <a href="https://movie-recommendations.netlify.com" class="projectLink">Movie Recommendations</a>
             <p class="italic">Tech: React, Firebase, Styled Components &nbsp;<a href="https://github.com/a-bishop/movies-to-watch"><i class="fab fa-github-square gitHubLink"></i></a></p>
             <p>An app to save and share movie recommendations, using Firebase, React and the Open Movie Database API. Learned React's new Hooks API and the Styled Components library.</p>
@@ -188,31 +180,39 @@ permalink: /projects/
             <p class="italic">Tech: Swift, XCode, ListenNotes API &nbsp;<a href="https://github.com/a-bishop/podBlast"><i class="fab fa-github-square gitHubLink"></i></a></p>
             <p>An iOS podcast search and recommendation app, consuming the ListenNotes API and featuring infinite scroll. Search by topic, podcast name, or by genre, and save favourite podcasts for later.</p>
             <br>
+            <a href="https://sandbox.abishop.me" class="projectLink">Outdraw</a>
+            <p class="italic">Tech: Feathers.js, HTML5 Canvas &nbsp;<a href="https://github.com/a-bishop/feathers-draw"><i class="fab fa-github-square gitHubLink"></i></a></p>
+            <p>A real-time collaborative drawing app, using HTML5 Canvas, Feathers.js and neDB, a file-based data store modeled on MongoDB.</p>
+            <br>
+            <a href="https://andrewnbishop.com/drum-machine" class="projectLink">Tone.js Drum Machine</a>
+            <p class="italic">Tech: Tone.js, Web Components &nbsp;<a href="https://github.com/a-bishop/drum-machine"><i class="fab fa-github-square gitHubLink"></i></a></p>
+            <p>A drum machine and arpeggiator built with the Tone.js library and lit-element, a base class for creating lightweight Web Components. Demo works best in the Chrome browser.</p>
+            <br>
             <a href="https://js-messageboard.herokuapp.com/" class="projectLink" >JS Messageboard</a>
             <p class="italic">Tech: Node, React, MongoDB, Webpack, Bootstrap &nbsp;<a href="https://github.com/a-bishop/js-msgboard"><i class="fab fa-github-square gitHubLink"></i></a></p>
-            <p>Proof-of-concept universal JavaScript messageboard application with a fully responsive front-end and custom authentication and authorization scheme. Built for Camosun program's second-year final web services project.</p>
+            <p>Isomorphic JavaScript messageboard application with a responsive front-end and custom authentication and authorization scheme. Built for Camosun program's second-year final Web Services project.</p>
             <br>
             <a href="https://andrewnbishop.com/population-stats" class="projectLink">Population Stats</a>
             <p class="italic">Tech: React, D3 &nbsp;<a href="https://github.com/a-bishop/population-stats"><i class="fab fa-github-square gitHubLink"></i></a></p>
             <p>A React single page application that allows users to compare up to six country populations in a bar graph. Uses the D3 library.</p>
             <br>
             <a href="https://github.com/a-bishop/battlesnake-samuel" class="projectLink" >Battlesnake</a>
-            <p class="italic">Tech: JavaScript, Node, Express, lodash &nbsp;<a href="https://github.com/a-bishop/battlesnake-samuel"><i class="fab fa-github-square gitHubLink"></i></a></p>
+            <p class="italic">Tech: JavaScript, Node, Express, lodash &nbsp;</p>
             <p>A snake AI written in Node to compete in the intermediate category at Battlesnake, a programming competition.</p>
             <br>
             <a href="https://github.com/a-bishop/micks-licks" class="projectLink" >Mick's Licks</a>
-            <p class="italic">Tech: JavaScript, HTML, CSS, PHP, MySQL, Bootstrap, GitLab &nbsp;<a href="https://github.com/a-bishop/micks-licks"><i class="fab fa-github-square gitHubLink"></i></a></p>
-            <p>An e-commerce web application built with the LAMP stack to sell used vinyl records, with login verification, a cart system and online payment integration. Created with a team of three other developers.</p>
+            <p class="italic">Tech: JavaScript, HTML, CSS, PHP, MySQL, Bootstrap, GitLab &nbsp;</p>
+            <p>An e-commerce web application built with the LAMP stack to sell used vinyl records, with login verification, a cart system and online payment integration. Created with a team of three other developers as final project for Web Applications class.</p>
             <br>
-            <a href="https://projects.abishop.me/blog" class="projectLink" >Capstone Project Site</a>
-            <p class="italic">Tech: Wordpress, MySQL, Digital Ocean</p>
-            <p>Installed and customized a Wordpress blog within a server block on a Digital Ocean droplet to function as our React Native Mobile Kiosk Capstone project website. Wrote all blog entries.</p>
+            <a href="https://github.com/a-bishop/tetris" class="projectLink" >Tetris Clone</a>
+            <p class="italic">Tech: C++</p>
+            <p>A clone of the game of tetris, written in C++. Built as final project for Programming from C to C++ class.</p>
+            <br>
+            <a href="https://github.com/a-bishop/select-contract-lab" class="projectLink" >Select Contract</a>
+            <p class="italic">Tech: Java, Java Swing</p>
+            <p>A business contract Java application using the Java Swing toolkit. Built as final project for Introduction to Software Engineering class.</p>
             <br>
             <a href="https://github.com/a-bishop/camlink-scraper" class="projectLink" >Timetable Scraper</a>&nbsp;and&nbsp;<a href="https://andrewnbishop.com/react-view-timetable/" class="projectLink" >Timetable Viewer</a>
             <p class="italic">Tech: Python, Selenium, Beautiful Soup, React, CSS Grid &nbsp;<a href="https://github.com/a-bishop/camlink-scraper"><i class="fab fa-github-square gitHubLink"></i></a></p>
-            <p>A Python script to scrape student's course registration data and a React SPA to view the courses as a weekly schedule.</p>
-            <br>
-            <a href="https://andrewnbishop.com" class="projectLink" >This Site</a>
-            <p class="italic">Tech: GitHub Pages, Jekyll, Liquid, Markdown, HTML, CSS &nbsp;<a href="https://github.com/a-bishop/a-bishop.github.io"><i class="fab fa-github-square gitHubLink"></i></a></p>
-            <p>A Jekyll blog, extended to include tag and project pages built with Liquid templating language and CSS grid / flexbox.</p>
+            <p>A Python script to scrape Camosun students' course registration data and a React single page application to view the courses as a weekly schedule.</p>
         </section>
