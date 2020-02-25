@@ -10,7 +10,7 @@ Bootstrap's modal window feature can be implemented by fetching and dynamically 
 
 Modal windows are a handy way to present important information when an element is clicked. Integrating them in a web app normally requires only a combination of HTML, CSS and JavaScript. However, another layer of complexity is added when fetching data dynamically from a database.
 
-I used the following techniques to create modal windows on an e-commerce website I built out with my classmates earlier this year. The premise was a client who wanted a site where he could sell his used vinyl records, and one of the requested features was a modal window that displayed additional information about each album when clicked.
+I learned about techniques for working with modal windows when working on an e-commerce website with my classmates earlier this year. The premise for the project was a site where a potential client could sell used vinyl records, and one of the features we implemented was a modal window that displayed additional information about each album when clicked.
 
 ## Fetching data and populating the HTML page
 
@@ -48,18 +48,18 @@ ENT_QUOTES) . "' class='more-info btn btn-info' data-toggle='modal' data-target=
 I then passed this data to the modal window through event handlers in my JavaScript file (using the JQuery library). You'll notice the embed link for the Spotify player that I'm concatenating with the link I fetched from our RECORD table, and then assigning to the `src` attribute of the `link` ID in the modal window.
 
 ```javascript
-$(".more-info").click(function() {
-  var record = "https://embed.spotify.com/?uri=";
-  record += $(this).attr("link");
-  var description = $(this).attr("description");
-  var title = $(this).attr("title");
-  var artist = $(this).attr("artist");
-  var titleArtist = title + " - " + artist;
-  var releaseDate = $(this).attr("releaseDate");
-  $("#titleArtist").html(titleArtist);
-  $("#link").attr("src", record);
-  $("#description").html(description);
-  $("#releaseDate").html(releaseDate);
+$('.more-info').click(function() {
+  var record = 'https://embed.spotify.com/?uri=';
+  record += $(this).attr('link');
+  var description = $(this).attr('description');
+  var title = $(this).attr('title');
+  var artist = $(this).attr('artist');
+  var titleArtist = title + ' - ' + artist;
+  var releaseDate = $(this).attr('releaseDate');
+  $('#titleArtist').html(titleArtist);
+  $('#link').attr('src', record);
+  $('#description').html(description);
+  $('#releaseDate').html(releaseDate);
 });
 ```
 
