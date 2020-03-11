@@ -66,7 +66,7 @@ permalink: /projects/
         padding-top: 1em;
       }
       .languageLists {
-        width: 80%;
+        width: 50%;
         display: flex;
         justify-content: space-between;
       }
@@ -146,28 +146,24 @@ permalink: /projects/
             <li>&nbsp;PHP</li>
             <li>&nbsp;SQL</li>
           </ul>
-          <ul class="arrowList">
-            <li>&nbsp;Java</li>
-            <li>&nbsp;C++</li>
-          </ul>
         </div>
         <p class="mainSectionTitle">TOOLBOX</p>
         <section class="toolBox">
             <div class="toolBoxItem">
               <p class="titleBold">Front End / Testing</p>
-              <p>React, React Native, Gatsby, Jekyll, Web Components, Mocha, Chai, Sinon, TestCafe</p>
+              <p>React, Gatsby, Web Components, Mocha, Chai, Sinon, TestCafe</p>
             </div>
             <div class="separator">
             </div>
             <div class="toolBoxItem">
-              <p class="titleBold">Back End / APIs</p>
-              <p>Node, Express, Feathers, MongoDB, MySQL, Firebase, Stripe, Braintree</p>
+              <p class="titleBold">Back End</p>
+              <p>Node, Express, Feathers, MongoDB, MySQL, Firebase</p>
             </div>
             <div class="separator">
             </div>
             <div class="toolBoxItem">
               <p class="titleBold">DevOps / Tooling</p>
-              <p>AWS, Linux, Docker, Git, Vim, VSCode, Bash/Zsh, Postman, Jira</p>
+              <p>Docker, Git, Vim, VSCode, Bash/Zsh, Postman, Jira</p>
             </div>
         </section>
         <p class="mainSectionTitle">RECENT PROJECTS</p>
@@ -203,16 +199,4 @@ permalink: /projects/
             <a href="https://github.com/a-bishop/micks-licks" class="projectLink" >Mick's Licks</a>
             <p class="italic">Tech: JavaScript, HTML, CSS, PHP, MySQL, Bootstrap, GitLab &nbsp;</p>
             <p>An e-commerce web application built with the LAMP stack to sell used vinyl records, with login verification, a cart system and online payment integration. Created with a team of three other developers as final project for Web Applications class.</p>
-            <br>
-            <a href="https://github.com/a-bishop/tetris" class="projectLink" >Tetris Clone</a>
-            <p class="italic">Tech: C++</p>
-            <p>A clone of the game of tetris, written in C++. Built as final project for Programming from C to C++ class.</p>
-            <br>
-            <a href="https://github.com/a-bishop/select-contract-lab" class="projectLink" >Select Contract</a>
-            <p class="italic">Tech: Java, Java Swing</p>
-            <p>A business contract Java application using the Java Swing toolkit. Built as final project for Introduction to Software Engineering class.</p>
-            <br>
-            <a href="https://github.com/a-bishop/camlink-scraper" class="projectLink" >Timetable Scraper</a>&nbsp;and&nbsp;<a href="https://andrewnbishop.com/react-view-timetable/" class="projectLink" >Timetable Viewer</a>
-            <p class="italic">Tech: Python, Selenium, Beautiful Soup, React, CSS Grid &nbsp;<a href="https://github.com/a-bishop/camlink-scraper"><i class="fab fa-github-square gitHubLink"></i></a></p>
-            <p>A Python script to scrape Camosun students' course registration data and a React single page application to view the courses as a weekly schedule.</p>
         </section>
