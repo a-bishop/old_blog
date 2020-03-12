@@ -134,38 +134,6 @@ permalink: /projects/
       </div>
     </section>
     <main>
-        <p class="mainSectionTitle">LANGUAGES USED</p>
-        <div class="languageLists">
-          <ul class="arrowList">
-            <li>&nbsp;JavaScript</li>
-            <li>&nbsp;HTML / CSS</li>
-            <li>&nbsp;Python</li>
-          </ul>
-          <ul class="arrowList">
-            <li>&nbsp;Swift</li> 
-            <li>&nbsp;PHP</li>
-            <li>&nbsp;SQL</li>
-          </ul>
-        </div>
-        <p class="mainSectionTitle">TOOLBOX</p>
-        <section class="toolBox">
-            <div class="toolBoxItem">
-              <p class="titleBold">Front End / Testing</p>
-              <p>React, Gatsby, Web Components, Mocha, Chai, Sinon, TestCafe</p>
-            </div>
-            <div class="separator">
-            </div>
-            <div class="toolBoxItem">
-              <p class="titleBold">Back End</p>
-              <p>Node, Express, Feathers, MongoDB, MySQL, Firebase</p>
-            </div>
-            <div class="separator">
-            </div>
-            <div class="toolBoxItem">
-              <p class="titleBold">DevOps / Tooling</p>
-              <p>Docker, Git, Vim, VSCode, Bash/Zsh, Postman, Jira</p>
-            </div>
-        </section>
         <p class="mainSectionTitle">RECENT PROJECTS</p>
         <section>
             <a href="https://movie-recommendations.netlify.com" class="projectLink">Movie Recommendations</a>
