@@ -4,16 +4,19 @@ title: About
 permalink: /about/
 ---
 
-I'm a graduate of the Information and Computer Systems program at Camosun College in Victoria, BC, and I recently completed a 6-month Software Engineering internship at [Change.org](https://change.org) where I worked as a backend developer on the payments team. I'm passionate about working with modern web technologies to craft great user experiences.
 
-My intent with this site is to feature my personal and professional software development projects and to give me a place to reflect on what I've been learning. Check out the [projects page]( {{ "./projects" | relative_url }} ) to see some demos of my latest side projects. My GitHub account with all the source code can be found [here](https://github.com/a-bishop).
+I'm a web developer based in Victoria, BC, Canada. After graduating in 2019 with an Information Systems diploma, I spent six months interning at [Change.org](https://www.change.org/) where I wrote an end-to-end automated test suite and helped with the maintenance and monitoring of the site's payments platform. I'm currently working as a junior full-stack developer at [Stocksy United](https://www.stocksy.com/), a stock photography co-operative, where I'm building out new image search features.
+
+Some of the technologies I've worked with include HTML/CSS/JS, React, Node, PHP, Ruby, MySQL, Amazon Web Services and the testing frameworks Mocha / Chai / Sinon and TestCafé. In school and in side projects I've dabbled with Swift, React Native and GraphQL.
+
+Check out the [projects page]( {{ "./projects" | relative_url }} ) to see some demos of my latest side projects. My GitHub account with all the source code can be found [here](https://github.com/a-bishop).
 
 <br>
  <img src="../images/me-jan2019-sm.png" alt="ProfilePic" width="150px" style="border-radius: 50%;">
 
 ## Contact
 
-Have questions about my portfolio or current work availability? Please don't hesitate to get in touch.
+Have questions about my portfolio? Please don't hesitate to get in touch.
 
 <form action="https://getform.io/f/ab7dccdb-e06b-49f5-8433-2d2bc2eaa19c" method="POST" id="usrform">
     <div class="form-row">

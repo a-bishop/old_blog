@@ -3,16 +3,15 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
-
   <head>
     <style>
       main {
-        display: grid; 
+        /* display: grid; 
         grid-auto-rows: auto; 
-        grid-gap: 1em; 
+        grid-gap: 1em;  */
         padding: 1em 0;
         font-size: 95%;
-        line-height: 1.5em;
+        /* line-height: 1.5em; */
         font-family: 'Helvetica', 'Arial', sans-serif;
       }
       strong {
@@ -39,7 +38,7 @@ permalink: /projects/
       }
       .address {
         display: flex;
-        border-bottom: 2px solid #d9d9d9;
+        /* border-bottom: 2px solid #d9d9d9; */
         padding-bottom: 1em;
         justify-content: space-between; 
       }
@@ -134,7 +133,6 @@ permalink: /projects/
       </div>
     </section>
     <main>
-        <p class="mainSectionTitle">RECENT PROJECTS</p>
         <section>
             <a href="https://movie-recommendations.netlify.com" class="projectLink">Movie Recommendations</a>
             <p class="italic">Tech: React, Firebase, Styled Components &nbsp;<a href="https://github.com/a-bishop/movies-to-watch"><i class="fab fa-github-square gitHubLink"></i></a></p>
