@@ -125,13 +125,13 @@ permalink: /projects/
     </style>
   </head>
   <div>
-    <section class="address">
+    <!-- <section class="address">
       <h2></h2>
       <div class="linkIcons">
         <a href="https://github.com/a-bishop" ><i class="fab fa-github-square"></i></a>&nbsp;
         <a href="https://www.linkedin.com/in/andrew-n-bishop/" ><i class="fab fa-linkedin"></i></a>&nbsp;
       </div>
-    </section>
+    </section> -->
     <main>
         <section>
             <a href="https://movie-recommendations.netlify.com" class="projectLink">Movie Recommendations</a>

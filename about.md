@@ -12,7 +12,7 @@ Some of the technologies I've worked with include HTML/CSS/JS, React, Node, PHP,
 Check out the [projects page]( {{ "./projects" | relative_url }} ) to see some demos of my latest side projects. My GitHub account with all the source code can be found [here](https://github.com/a-bishop).
 
 <br>
- <img src="../images/me-jan2019-sm.png" alt="ProfilePic" width="150px" style="border-radius: 50%;">
+ <img src="../images/me-colombia.png" alt="ProfilePic" width="auto" height="200px" style="border-radius: 10%;">
 
 ## Contact
 
