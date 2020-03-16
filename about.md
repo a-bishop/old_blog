@@ -5,9 +5,11 @@ permalink: /about/
 ---
 
 
-I'm a web developer based in Victoria, BC, Canada. After graduating in 2019 with an [Information and Computer Systems diploma](http://camosun.ca/learn/programs/information-computer-systems/), I spent six months interning at [Change.org](https://www.change.org/) where I wrote end-to-end automated tests and helped with the maintenance and monitoring of the site's payments platform. I'm currently working as a junior full-stack developer at [Stocksy United](https://www.stocksy.com/), a stock photography co-operative, where I'm involved in various projects to improve the image search experience.
+I'm a web developer based in Victoria, BC, Canada. 
 
-Some of the technologies I've worked with include HTML/CSS/JS, React, Node, PHP, Ruby, MySQL, MongoDB, Amazon Web Services and the testing frameworks Mocha / Chai / Sinon and TestCafé. In school and in side projects I've dabbled with Swift, React Native, and GraphQL.
+After graduating in 2019 with an [Information and Computer Systems](http://camosun.ca/learn/programs/information-computer-systems/) diploma, I spent six months interning at [Change.org](https://www.change.org/) where I wrote end-to-end automated tests and worked on event logging and error handling for the site's payments service. I'm currently working as a Junior Full Stack Developer at [Stocksy United](https://www.stocksy.com/), a stock photography co-operative, where I'm involved in various projects to improve the image search experience.
+
+Some of the technologies I've worked with include HTML/CSS/JS, React, Node, PHP, Ruby, MySQL, MongoDB, Amazon Web Services and the testing frameworks Mocha / Chai / Sinon and TestCafé. In school and in side projects I've dabbled with Python, Swift, React Native and GraphQL.
 
 Check out the [projects page]( {{ "./projects" | relative_url }} ) to see some demos of my latest side projects. My GitHub account with all the source code can be found [here](https://github.com/a-bishop).
 
