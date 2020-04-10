@@ -5,9 +5,7 @@ permalink: /about/
 ---
 
 
-I'm a web developer based in Victoria, BC, Canada. 
-
-After graduating in 2019 with an [Information and Computer Systems](http://camosun.ca/learn/programs/information-computer-systems/) diploma, I spent six months interning at [Change.org](https://www.change.org/) where I wrote end-to-end automated tests and worked on event logging and error handling for the site's payments service. I'm currently working as a Junior Full Stack Developer at [Stocksy United](https://www.stocksy.com/), a stock photography co-operative, where I'm involved in various projects to improve the image search experience.
+I'm a web developer based in Victoria, Canada, currently working at [Stocksy United](https://www.stocksy.com/), a stock photography co-op.
 
 Some of the technologies I've worked with include HTML/CSS/JS, React, Node, PHP, Ruby, MySQL, MongoDB, Amazon Web Services and the testing frameworks Mocha / Chai / Sinon and TestCafé. In school and in side projects I've dabbled with Python, Swift, React Native and GraphQL.
 
