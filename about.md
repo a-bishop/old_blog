@@ -7,8 +7,6 @@ permalink: /about/
 
 I'm a web developer based in Victoria, Canada, currently working at [Stocksy United](https://www.stocksy.com/), a stock photography co-op.
 
-Some of the technologies I've worked with include HTML/CSS/JS, React, Node, PHP, Ruby, MySQL, MongoDB, Amazon Web Services and the testing frameworks Mocha / Chai / Sinon and TestCafé. In school and in side projects I've dabbled with Python, Swift, React Native and GraphQL.
-
 Check out the [projects page]( {{ "./projects" | relative_url }} ) to see some demos of my latest side projects. My GitHub account with all the source code can be found [here](https://github.com/a-bishop).
 
 <br>
