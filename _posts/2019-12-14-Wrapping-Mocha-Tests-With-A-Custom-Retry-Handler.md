@@ -12,7 +12,7 @@ For instance, a request sent to an endpoint that responds via webhook and trigge
 
 While writing integration tests in Mocha for the payment platform at Change.org, I helped develop a method that would allow us to avoid the use of these heavy-handed timeouts. We wanted to be able to retry the test if it failed, using increasing timeouts calculated on each run.
 
-The technique involved wrapping the test in a function that takes in the number of attempts desired, and returns a test handler with a function argument that when called calculates an adjusted timeout based on the attempt count and a multiplication factor (which can be configured). This function knows the attempt count on each test run because it has been bound via closure in the handler.
+The technique involved wrapping the test in a function that takes in the number of attempts desired, and returns a test handler with a function argument that, when called, calculates an adjusted timeout based on the attempt count and a multiplication factor (which can be configured). This function knows the attempt count on each test run because it has been bound via closure in the handler.
 
 ```js
 // test_utils.js
