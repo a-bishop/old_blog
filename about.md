@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 
-I'm a web developer based in Victoria, Canada, currently working at [Stocksy United](https://www.stocksy.com/), a stock photography co-op. A full-stack generalist, I have production experience working with React, Typescript, Node, Ruby, PHP and MySQL, as well as with AWS services such as Lambda, Cognito and API Gateway. 
+I'm a web developer based in Victoria, Canada, currently working at [Stocksy United](https://www.stocksy.com/), a stock photography co-op. A full-stack generalist, I have production experience working with React, Typescript, Node, Ruby, PHP, MySQL and PostgreSQL, as well as with AWS services such as Lambda, Cognito and API Gateway. 
 
 Recent projects I've worked on include an end-to-end testing framework, a custom analytics pipeline, and a number of tools to improve user engagement and search performance. In my spare time I enjoy playing music, listening to podcasts and travelling.
 
