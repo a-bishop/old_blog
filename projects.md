@@ -136,7 +136,7 @@ permalink: /projects/
         <section>
             <a href="https://movie-recommendations.netlify.com" class="projectLink">Movie Recommendations</a>
             <p class="italic">Tech: React, Firebase, Styled Components &nbsp;<a href="https://github.com/a-bishop/movies-to-watch"><i class="fab fa-github-square gitHubLink"></i></a></p>
-            <p>An app to save and share movie recommendations, using Firebase, React and the Open Movie Database API. Learned React's new Hooks API and the Styled Components library.</p>
+            <p>An app to save and share movie recommendations, using Firebase, React and the Open Movie Database API.</p>
             <br>
             <a href="https://github.com/a-bishop/podBlast" class="projectLink">Podblast</a>
             <p class="italic">Tech: Swift, XCode, ListenNotes API &nbsp;<a href="https://github.com/a-bishop/podBlast"><i class="fab fa-github-square gitHubLink"></i></a></p>
