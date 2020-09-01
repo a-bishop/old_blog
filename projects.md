@@ -138,29 +138,29 @@ permalink: /projects/
             <p class="italic">Tech: React, Firebase, Styled Components &nbsp;<a href="https://github.com/a-bishop/movies-to-watch"><i class="fab fa-github-square gitHubLink"></i></a></p>
             <p>An app to save and share movie recommendations, using Firebase, React and the Open Movie Database API. Learned React's new Hooks API and the Styled Components library.</p>
             <br>
-            <a href="https://github.com/a-bishop/podBlast" class="projectLink">Podblast</a>
-            <p class="italic">Tech: Swift, XCode, ListenNotes API &nbsp;<a href="https://github.com/a-bishop/podBlast"><i class="fab fa-github-square gitHubLink"></i></a></p>
-            <p>An iOS podcast search and recommendation app, consuming the ListenNotes API and featuring infinite scroll. Search by topic, podcast name, or by genre, and save favourite podcasts for later.</p>
-            <br>
             <a href="https://sandbox.abishop.me" class="projectLink">Outdraw</a>
-            <p class="italic">Tech: Feathers.js, HTML5 Canvas &nbsp;<a href="https://github.com/a-bishop/feathers-draw"><i class="fab fa-github-square gitHubLink"></i></a></p>
+            <p class="italic">Tech: Feathers.js, HTML5 Canvas, Web Sockets &nbsp;<a href="https://github.com/a-bishop/feathers-draw"><i class="fab fa-github-square gitHubLink"></i></a></p>
             <p>A real-time collaborative drawing app, using HTML5 Canvas, Feathers.js and neDB, a file-based data store modeled on MongoDB.</p>
             <br>
             <a href="https://andrewnbishop.com/drum-machine" class="projectLink">Tone.js Drum Machine</a>
             <p class="italic">Tech: Tone.js, Web Components &nbsp;<a href="https://github.com/a-bishop/drum-machine"><i class="fab fa-github-square gitHubLink"></i></a></p>
             <p>A drum machine and arpeggiator built with the Tone.js library and lit-element, a base class for creating lightweight Web Components. Demo works best in the Chrome browser.</p>
             <br>
-            <a href="https://js-messageboard.herokuapp.com/" class="projectLink" >JS Messageboard</a>
-            <p class="italic">Tech: Node, React, MongoDB, Webpack, Bootstrap &nbsp;<a href="https://github.com/a-bishop/js-msgboard"><i class="fab fa-github-square gitHubLink"></i></a></p>
-            <p>Isomorphic JavaScript messageboard application with a responsive front-end and custom authentication and authorization scheme. Built for Camosun program's second-year final Web Services project.</p>
-            <br>
             <a href="https://andrewnbishop.com/population-stats" class="projectLink">Population Stats</a>
             <p class="italic">Tech: React, D3 &nbsp;<a href="https://github.com/a-bishop/population-stats"><i class="fab fa-github-square gitHubLink"></i></a></p>
             <p>A React single page application that allows users to compare up to six country populations in a bar graph. Uses the D3 library.</p>
             <br>
+            <a href="https://github.com/a-bishop/podBlast" class="projectLink">Podblast</a>
+            <p class="italic">Tech: Swift, XCode, ListenNotes API &nbsp;<a href="https://github.com/a-bishop/podBlast"><i class="fab fa-github-square gitHubLink"></i></a></p>
+            <p>An iOS podcast search and recommendation app, consuming the ListenNotes API and featuring infinite scroll. Search by topic, podcast name, or by genre, and save favourite podcasts for later.</p>
+            <br>
             <a href="https://github.com/a-bishop/battlesnake-samuel" class="projectLink" >Battlesnake</a>
             <p class="italic">Tech: JavaScript, Node, Express, lodash &nbsp;</p>
             <p>A snake AI written in Node to compete in the intermediate category at Battlesnake, a programming competition.</p>
+            <br>
+            <a href="https://js-messageboard.herokuapp.com/" class="projectLink" >JS Messageboard</a>
+            <p class="italic">Tech: Node, React, MongoDB, Webpack, Bootstrap &nbsp;<a href="https://github.com/a-bishop/js-msgboard"><i class="fab fa-github-square gitHubLink"></i></a></p>
+            <p>Isomorphic JavaScript messageboard application with a responsive front-end and custom authentication and authorization scheme. Built for Camosun program's second-year final Web Services project.</p>
             <br>
             <a href="https://github.com/a-bishop/micks-licks" class="projectLink" >Mick's Licks</a>
             <p class="italic">Tech: JavaScript, HTML, CSS, PHP, MySQL, Bootstrap, GitLab &nbsp;</p>
