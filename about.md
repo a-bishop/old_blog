@@ -5,7 +5,9 @@ permalink: /about/
 ---
 
 
-I'm a web developer based in Victoria, Canada, currently working at [Stocksy United](https://www.stocksy.com/), a stock photography co-op.
+I'm a web developer based in Victoria, Canada, currently working at [Stocksy United](https://www.stocksy.com/), a stock photography co-op. I have production experience working with React, Typescript, Node, Ruby, PHP, MySQL and PostgreSQL, as well as with AWS services such as Lambda, Cognito, API Gateway and Redshift. 
+
+Recent projects I've worked on include an end-to-end testing framework, a custom analytics pipeline, and tools to improve user engagement and search performance. In my spare time I enjoy playing music, listening to podcasts and travelling.
 
 Check out the [projects page]( {{ "./projects" | relative_url }} ) to see some demos of my latest side projects. My GitHub account with all the source code can be found [here](https://github.com/a-bishop).
 
